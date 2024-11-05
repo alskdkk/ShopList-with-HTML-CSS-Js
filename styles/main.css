@@ -34,16 +34,29 @@ main form fieldset{
   
   border: 2px solid var(--border-primary);
   border-radius: .75rem;
+  
 }
+
+#submit input:hover {
+  border: 2px solid var(--border-hover);
+}
+
 
 #submit button {
   border: none;
   background-color: var(--color-brand);
+  height: 2.75rem;
   padding: .5rem;
   border-radius: .75rem;
   
   font: var(--label);
   color: var(--always-white);
+  transition: 200ms;
+}
+
+#submit button:hover {
+  background-color: var(--color-brand-hover);
+
 }
 
 .shop-list {
@@ -66,10 +79,57 @@ main form fieldset{
     background-color: var(--background-secondary);
   }
   
-  .icon-list-1, .icon-list-2 {
+  .icon-list {
     width: 1rem;
     height: 1rem;
     background-color: var(--background-secondary);
+  }
+
+  .checkbox-wrapper {
+    position: relative;
+  
+    & [type='checkbox'] {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+  
+    .checkbox-image {
+      width: 1rem;
+      height: 1rem;
+  
+      background-image: url(../assets/icons/check-default.svg);
+    }
+
+    &:has(:checked) .checkbox-image {
+      background-image: url(../assets/icons/check-checked.svg);
+    }
+    
+  }
+}
+
+footer {
+  #not {
+    background-color: var(--color-danger);
+    width: 20.625rem;
+    height: 2.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: .75rem;
+    margin-inline: auto;
+    margin-top: 2.25rem;
+    
+  }
+  #not span {
+    background-color: var(--color-danger);
+    font: var(--label);
+    color: var(--always-white);
+    width: 15.438rem;
+    margin-inline: .5rem;
+  }
+
+  #not img {
+    background-color: var(--color-danger);
   }
 }
 
@@ -104,4 +164,43 @@ main form fieldset{
       width: 33.125rem;
     }
   }
+
+  .checkbox-wrapper {
+    position: relative;
+  
+    & [type='checkbox'] {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+  
+    .checkbox-image {
+      width: 1rem;
+      height: 1rem;
+  
+      background-image: url(../assets/icons/check-default.svg);
+    }
+
+    &:hover, &:focus-within {
+      .checkbox-image {
+        background-image: url(../assets/icons/check-hover.svg);
+      }
+    }
+
+    &:has(:checked) .checkbox-image {
+      background-image: url(../assets/icons/check-checked.svg);
+    }
+    
+  }
+
+  footer {
+    #not {
+      width: 39.375rem;
+    }
+
+    #not span {
+      width: 34.188rem;
+    }
+  }
+  
 }
