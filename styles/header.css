@@ -1,0 +1,24 @@
+header {
+  .back {
+    margin-top: 2.125rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (width >= 80em) {
+  header {
+    .nav-width {
+      width: 39.375rem;
+      margin-inline: auto;
+      .back {
+        margin-top: 3.875rem;
+        margin-inline: auto;
+      }
+    }
+  }
+
+  header img {
+    margin-top: 1.563rem;
+    margin-inline: auto;
+  }
+}
