@@ -24,50 +24,15 @@
       <h1>Compras da semana</h1>
       <form>
           <fieldset id="submit">
-          <input type="text" placeholder="Adicione um novo item">
-          <button>Adicionar item</button>
+          <input type="text" placeholder="Adicione um novo item" id="itemName" name="newItem">
+          <input type="submit" name="newItem" id="send" >
         </fieldset>
       </form>
     </div>
     <div class="container">
       <div>
-        <ul class="flex shop-list">
-          <li class="flex">
-            <div class="checkbox-wrapper">
-            <div class="checkbox-image">
-            <input type="checkbox" name="" id="">
-            </div>
-            </div>
-            <span class="shop-title">Pão de forma</span>
-            <img class="icon-list" src="assets/icons/trash.svg" alt="">
-          </li>
-          <li class="flex">
-            <div class="checkbox-wrapper">
-            <div class="checkbox-image">
-            <input type="checkbox" name="" id="">
-            </div>
-            </div>
-            <span class="shop-title">Café</span>
-            <img class="icon-list" src="assets/icons/trash.svg" alt="">
-          </li>
-          <li class="flex">
-            <div class="checkbox-wrapper">
-            <div class="checkbox-image">
-            <input type="checkbox" name="" id="">
-            </div>
-            </div>
-            <span class="shop-title">Suco de laranja</span>
-            <img class="icon-list" src="assets/icons/trash.svg" alt="">
-          </li>
-          <li class="flex">
-            <div class="checkbox-wrapper">
-            <div class="checkbox-image">
-            <input type="checkbox" name="" id="">
-            </div>
-            </div>
-            <span class="shop-title">Bolacha</span>
-            <img class="icon-list" src="assets/icons/trash.svg" alt="">
-          </li>
+        <ul id="item-shopList" class="flex shop-list">
+          
           
         </ul>
       </div>
@@ -80,6 +45,6 @@
       <img class="danger" src="assets/icons/delete.svg" alt="">
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

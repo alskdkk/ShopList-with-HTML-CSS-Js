@@ -42,7 +42,7 @@ main form fieldset{
 }
 
 
-#submit button {
+#submit #send {
   border: none;
   background-color: var(--color-brand);
   height: 2.75rem;
@@ -54,7 +54,7 @@ main form fieldset{
   transition: 200ms;
 }
 
-#submit button:hover {
+#submit #send:hover {
   background-color: var(--color-brand-hover);
 
 }
@@ -149,7 +149,7 @@ footer {
   #submit input {
     width: 28.125rem;
   }
-  #submit button {
+  #submit #send {
     width: 10rem;
   }
 
